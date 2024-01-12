@@ -204,7 +204,7 @@ test_x = scaler.fit_transform(test_images)
 
 layer_sizes = [784, 100, 10]
 NN = NeuralNetwork(layer_sizes)
-NN.fit(train_x, train_y, learnrate=0.01, mini_batch_size=100, epochs=500)
+NN.fit(train_x, train_y, learnrate=0.01, mini_batch_size=100, epochs=3000)
 
 test_pred_labels = NN.predict(test_x)
 acc = 0.0
